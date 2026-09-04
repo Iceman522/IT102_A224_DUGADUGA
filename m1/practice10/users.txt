@@ -1,0 +1,6 @@
+Account Number: 1234
+Account Name: Adrian Paolo Dugaduga
+PIN: 1234
+Account Type: Savings Account
+Balance: 19000.00
+

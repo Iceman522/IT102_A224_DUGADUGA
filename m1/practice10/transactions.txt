@@ -1,0 +1,120 @@
+Timestamp: 2026-08-31 18:54:28
+Account Number: 1234
+Account: Clyde Balaman
+Account Type: Savings Account
+Transaction: Deposit
+Amount: ₱2000.00
+Balance After: ₱12000.00
+
+Timestamp: 2026-08-31 18:55:07
+Account Number: 1234
+Account: Clyde Balaman
+Account Type: Savings Account
+Transaction: Deposit
+Amount: ₱5000.00
+Balance After: ₱17000.00
+
+Timestamp: 2026-08-31 18:55:49
+Account Number: 1234
+Account: Clyde Balaman
+Account Type: Savings Account
+Transaction: Withdraw
+Amount: ₱1500.00
+Balance After: ₱15500.00
+
+Timestamp: 2026-09-04 10:59:44
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Deposit
+Amount: ₱1000.00
+Balance After: ₱16500.00
+
+Timestamp: 2026-09-04 10:59:47
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Deposit
+Amount: ₱1000.00
+Balance After: ₱17500.00
+
+Timestamp: 2026-09-04 10:59:49
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Deposit
+Amount: ₱1000.00
+Balance After: ₱18500.00
+
+Timestamp: 2026-09-04 10:59:51
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Deposit
+Amount: ₱1000.00
+Balance After: ₱19500.00
+
+Timestamp: 2026-09-04 11:53:55
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Time Vault Locked (30 Days)
+Amount: ₱1000.00
+Balance After: ₱18500.00
+
+Timestamp: 2026-09-04 11:54:05
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Time Vault Locked (30 Days)
+Amount: ₱2000.00
+Balance After: ₱16500.00
+
+Timestamp: 2026-09-04 12:01:35
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Time Vault Locked (30 Days)
+Amount: ₱5000.00
+Balance After: ₱11500.00
+
+Timestamp: 2026-09-04 12:11:57
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Deposit
+Amount: ₱9000.00
+Balance After: ₱20500.00
+
+Timestamp: 2026-09-04 12:15:37
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Time Vault Locked (30 Days)
+Amount: ₱5000.00
+Balance After: ₱15500.00
+
+Timestamp: 2026-09-04 12:22:48
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Deposit
+Amount: ₱5000.00
+Balance After: ₱20500.00
+
+Timestamp: 2026-09-04 12:22:57
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Withdraw
+Amount: ₱500.00
+Balance After: ₱20000.00
+
+Timestamp: 2026-09-04 12:23:27
+Account Number: 1234
+Account: Adrian Paolo Dugaduga
+Account Type: Savings Account
+Transaction: Time Vault Locked (30 Days)
+Amount: ₱1000.00
+Balance After: ₱19000.00
+
