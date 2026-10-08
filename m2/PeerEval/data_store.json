@@ -1,0 +1,101 @@
+[
+    {
+        "eval_id": "e1",
+        "evaluator_id": "S101",
+        "evaluatee_id": "S102",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": "Great work!"
+    },
+    {
+        "eval_id": "e2",
+        "evaluator_id": "S101",
+        "evaluatee_id": "S103",
+        "communication_score": 2,
+        "effort_score": 2,
+        "technical_score": 1,
+        "feedback": "Unequal task share."
+    },
+    {
+        "eval_id": "e3",
+        "evaluator_id": "S102",
+        "evaluatee_id": "S101",
+        "communication_score": 5,
+        "effort_score": 4,
+        "technical_score": 5,
+        "feedback": "Clear leadership."
+    },
+    {
+        "eval_id": "e4",
+        "evaluator_id": "S101",
+        "evaluatee_id": "S102",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": ""
+    },
+    {
+        "eval_id": "e5",
+        "evaluator_id": "S101",
+        "evaluatee_id": "S102",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": ""
+    },
+    {
+        "eval_id": "e6",
+        "evaluator_id": "S101",
+        "evaluatee_id": "S103",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": ""
+    },
+    {
+        "eval_id": "e7",
+        "evaluator_id": "S101",
+        "evaluatee_id": "S102",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": ""
+    },
+    {
+        "eval_id": "e8",
+        "evaluator_id": "S101",
+        "evaluatee_id": "S103",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": ""
+    },
+    {
+        "eval_id": "e9",
+        "evaluator_id": "S2024-8921",
+        "evaluatee_id": "S2024-102",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": ""
+    },
+    {
+        "eval_id": "e10",
+        "evaluator_id": "S2024-8921",
+        "evaluatee_id": "S2024-103",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": ""
+    },
+    {
+        "eval_id": "e11",
+        "evaluator_id": "S2024-8921",
+        "evaluatee_id": "S2024-104",
+        "communication_score": 5,
+        "effort_score": 5,
+        "technical_score": 5,
+        "feedback": ""
+    }
+]
