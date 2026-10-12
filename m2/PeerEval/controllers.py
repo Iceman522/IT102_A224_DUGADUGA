@@ -15,13 +15,14 @@ class AppController:
             st.session_state.active_nav = "Evaluate"
 
         if "evaluations" not in st.session_state:
+            # Load stored evaluations from JSON or initialize default sample data
             loaded_evals = DataStorage.load_evaluations()
             if loaded_evals:
                 st.session_state.evaluations = loaded_evals
             else:
                 st.session_state.evaluations = [
-                    PeerEvaluation("e1", "S101", "S102", 5, 5, 5, "Great work!"),
-                    PeerEvaluation("e2", "S101", "S103", 2, 2, 1, "Unequal task share."),
+                    PeerEvaluation("e1", "S2024-8921", "S2024-102", 5, 5, 5, "Great work on architecture!"),
+                    PeerEvaluation("e2", "S2024-8921", "S2024-103", 2, 2, 1, "Unequal task share observed."),
                 ]
                 DataStorage.save_evaluations(st.session_state.evaluations)
 
@@ -59,10 +60,7 @@ class AppController:
                 views.render_instructor_report(user, group, evals, health_report)
 
             elif st.session_state.active_nav == "Account":
-                st.title("👤 User Account & Session")
-                st.info(f"Logged in as: **{user.name}** ({user.user_id})")
-                if st.button("Logout"):
-                    self.handle_logout()
+                views.render_profile_view(user, group, self.handle_logout)
 
             # Render Bottom Navigation Bar
             new_nav = views.render_bottom_nav(st.session_state.active_nav)
@@ -73,10 +71,9 @@ class AppController:
     def handle_login(self, role: str, user_id: str):
         if role == "Student":
             st.session_state.current_user = Student(user_id=user_id, name="Elena Rostova", role="Student", group_id="G4")
-            st.session_state.active_nav = "Evaluate"
         else:
             st.session_state.current_user = Instructor(user_id=user_id, name="Dr. Smith", role="Instructor", department="IS")
-            st.session_state.active_nav = "Reports"
+        st.session_state.active_nav = "Evaluate"
         st.rerun()
 
     def handle_logout(self):
