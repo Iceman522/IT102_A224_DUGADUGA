@@ -92,7 +92,7 @@ def render_evaluation_form(group, other_members: List, on_submit_eval: Callable)
 
 
 # ==========================================
-# 3. SCREEN 3: GROUP HEALTH CHECK (FULLY RESTORED)
+# 3. SCREEN 3: GROUP HEALTH CHECK
 # ==========================================
 def render_group_health_view(health_report: dict):
     inject_custom_css()
@@ -337,18 +337,30 @@ def render_profile_view(user, group, on_logout_click: Callable):
 
 
 # ==========================================
-# 6. REDESIGNED BOTTOM NAVIGATION BAR
+# 6. DYNAMIC ROLE-BASED BOTTOM NAVIGATION BAR
 # ==========================================
-def render_bottom_nav(current_tab: str) -> str:
+def render_bottom_nav_for_role(current_tab: str, user_role: str) -> str:
     st.markdown("---")
-    c1, c2, c3, c4 = st.columns(4)
-    with c1: b1 = st.button("📝 Review", use_container_width=True)
-    with c2: b2 = st.button("💚 Health", use_container_width=True)
-    with c3: b3 = st.button("📊 Reports", use_container_width=True)
-    with c4: b4 = st.button("👤 Profile", use_container_width=True)
+    
+    if user_role == "Instructor":
+        # Instructors see Health, Reports, and Profile (Review tab excluded)
+        c1, c2, c3 = st.columns(3)
+        with c1: b1 = st.button("💚 Health", use_container_width=True, key="nav_health_inst")
+        with c2: b2 = st.button("📊 Reports", use_container_width=True, key="nav_reports_inst")
+        with c3: b3 = st.button("👤 Profile", use_container_width=True, key="nav_profile_inst")
 
-    if b1: return "Evaluate"
-    elif b2: return "Health"
-    elif b3: return "Reports"
-    elif b4: return "Account"
+        if b1: return "Health"
+        elif b2: return "Reports"
+        elif b3: return "Account"
+    else:
+        # Students see Review, Health, and Profile (Reports hidden)
+        c1, c2, c3 = st.columns(3)
+        with c1: b1 = st.button("📝 Review", use_container_width=True, key="nav_eval_stu")
+        with c2: b2 = st.button("💚 Health", use_container_width=True, key="nav_health_stu")
+        with c3: b3 = st.button("👤 Profile", use_container_width=True, key="nav_profile_stu")
+
+        if b1: return "Evaluate"
+        elif b2: return "Health"
+        elif b3: return "Account"
+        
     return current_tab
