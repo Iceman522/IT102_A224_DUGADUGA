@@ -39,6 +39,3 @@ PeerEval is a Python OOP-based decision support system that helps students submi
 
 ## Developers
 - Adrian Paolo V. Dugaduga
-4. Install the required packages:
-   ```bash
-   pip install streamlit reportlab pandas
