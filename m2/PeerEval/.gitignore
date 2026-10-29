@@ -1,1 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
 
+# Virtual environments
+.venv/
+venv/
+
+# Database & generated data
+peereval.db
+data_store.json
+
+# Private configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Editor files
+.vscode/
+.idea/
